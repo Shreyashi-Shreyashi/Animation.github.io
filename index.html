@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation: example 5s infinite;
+    animation-direction: alternate;
+}
+    @keyframes example {
+        0%   {background-color:rgb(255, 183, 0); left:10px; top:50px; transform: rotate(50deg);transform: skewY(20deg)} 
+        25%  {background-color:rgb(157, 255, 0); left:750px; top:200px; transform: rotate(100deg); transform: scale(0.5, 0.5);}
+        50%  {background-color:rgb(0, 255, 119); right:350px; top:20px; transform: rotate(150deg); transform: skewX(20deg);}
+        75%  {background-color:rgb(0, 128, 126); right: 100px; top:350px; transform: rotate(200deg); transform: scale(0.5, 0.5);}
+        100% {background-color:rgb(255, 0, 187); left:350px; top:150px; transform: rotate(250deg);transform: skewY(20deg)}
+}
+    
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
